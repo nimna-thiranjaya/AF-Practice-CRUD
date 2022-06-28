@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import ShowRegModules from "./ShowRegModules";
 
 function StudentProfile() {
   const [user, setUser] = useState([]);
@@ -60,6 +61,10 @@ function StudentProfile() {
       &nbsp;
       <button onClick={onDelete}>Delete Account</button>&nbsp;
       <button onClick={onLogOut}>logOut</button>
+      <br />
+      <br />
+      <hr />
+      <ShowRegModules />
     </div>
   );
 }

@@ -50,9 +50,15 @@ const RegModules = async (data) => {
       students: student,
     };
 
+    var upm = {
+      _id: module._id,
+      name: module.name,
+      specialzation: module.specialzation,
+    };
+
     var UpdateModule = {
       userid: userid,
-      modules: module,
+      modules: upm,
     };
   }
   return await userAddtomodule(updateUser), ModuleAddtoUser(UpdateModule);
